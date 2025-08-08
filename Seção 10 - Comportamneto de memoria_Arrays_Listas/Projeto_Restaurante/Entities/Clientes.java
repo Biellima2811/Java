@@ -10,8 +10,7 @@ public class Clientes {
 	public static int proximoId = 1;
 	
 	public Clientes(String nome, String telefone, String email) {
-		this.id = proximoId;
-		proximoId++;
+		this.id = proximoId++;
 		this.Nome = nome;
 		this.telefone = telefone;
 		this.Email = email;
