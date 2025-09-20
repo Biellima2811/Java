@@ -1,0 +1,4 @@
+INDEX VERSION 1.134+D:\Projetos de Programação\Projetos Java\Curso Java - Udemy - Nelio Alves\Seção 12 - Enumerações, Composição\.metadata\.plugins\org.eclipse.jdt.core
+968584334.index
+1865797976.index
+3729101479.index

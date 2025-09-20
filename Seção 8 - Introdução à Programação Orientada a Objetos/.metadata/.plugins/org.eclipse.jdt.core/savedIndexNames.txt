@@ -1,0 +1,8 @@
+INDEX VERSION 1.134+D:\Projetos de Programação\Projetos Java\Curso Java - Udemy - Nelio Alves\Seção 8 - Introdução à Programação Orientada a Objetos\.metadata\.plugins\org.eclipse.jdt.core
+2972433902.index
+607014053.index
+3078373085.index
+1865797976.index
+3729101479.index
+1203794474.index
+2317096813.index

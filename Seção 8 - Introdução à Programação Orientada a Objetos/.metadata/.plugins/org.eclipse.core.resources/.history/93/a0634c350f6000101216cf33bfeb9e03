@@ -1,0 +1,47 @@
+package entities;
+
+public class Funcionario {
+	// Atributos
+	public String nome;
+	public Double salarioBruto, imposto;
+	
+	// --- MÉTODOS (Os botões inteligentes da ficha) ---
+
+    /**
+     * Este método calcula o salário líquido.
+     * Ele pega os atributos 'salarioBruto' e 'imposto' do próprio objeto
+     * e retorna o resultado da subtração.
+     */
+	public Double salarioLiquido() {
+		return salarioBruto - imposto;
+	}
+	
+	  /**
+     * Este método aumenta o salário bruto com base em uma porcentagem.
+     * Ele recebe a porcentagem como um parâmetro.
+     * O método é 'void' porque ele não retorna um valor, ele apenas modifica
+     * o atributo 'salarioBruto' do próprio objeto.
+     */
+	
+	public void aumentarSalario(double procentagem) {
+		// Calcula o valor do aumento
+		double aumento = salarioBruto * (porcentagem / 100);
+		
+		// Soma o aumento ao salário bruto atual
+		this.salarioBruto += aumento; // 'this.salarioBruto' se refere ao atributo da classe
+	
+	}
+	
+	 /**
+     * Este é um método especial. O Java o utiliza para converter o objeto
+     * em uma String quando você tenta imprimi-lo.
+     * Facilita a exibição dos dados.
+     */
+	
+	public String toString() {
+		// Retorna uma String formatada com o nome e o salário líquido.
+        // O %.2f formata o número para ter duas casas decimais.
+		return nome + ", R$ " + String.format("%.2f", salarioLiquido());
+	}
+
+}
