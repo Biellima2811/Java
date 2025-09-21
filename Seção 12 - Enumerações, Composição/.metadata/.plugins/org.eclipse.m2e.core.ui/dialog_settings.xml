@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="D:\Projetos de Programação\Projetos Java\Intensivao Java Spring\dslist"/>
 			<item value="D:\Projetos de Programação\Projetos Java\Curso Java - Udemy - Nelio Alves\Intensivao Java Spring\dslist"/>
 		</list>
 		<list key="projectNameTemplate">

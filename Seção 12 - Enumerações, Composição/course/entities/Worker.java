@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 package entities;
 
 import java.util.ArrayList;
@@ -131,7 +130,7 @@ public class Worker {
 			cal.setTime(c.getDate());
 			int c_year = cal.get(Calendar.YEAR);
 			// O mês no Calendar começa em 0 (Janeiro = 0), então somamos 1 para normalizar.
-			int c_month = 1 + cal.get(Calendar.MONTH); 
+			int c_month = cal.get(Calendar.MONTH) + 1; 
 			
 			// Se o ano e o mês do contrato correspondem aos parâmetros, adiciona o valor do contrato à soma.
 			if (year == c_year && month == c_month) {
@@ -141,10 +140,3 @@ public class Worker {
 		return sum;
 	}
 }
-=======
-package entities;
-
-public class Worker {
-
-}
->>>>>>> 8fb625f8685bb9d173f47b761d5fa7554056af9e

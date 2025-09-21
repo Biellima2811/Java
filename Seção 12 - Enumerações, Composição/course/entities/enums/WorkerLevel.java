@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 package entities.enums;
 
 /**
@@ -12,12 +11,3 @@ public enum WorkerLevel {
 	MidLevel,
 	Senior;
 }
-=======
-package entities.enums;
-
-public enum WorkerLevel {
-	Junior,
-	MidLevel,
-	Senior;
-}
->>>>>>> 8fb625f8685bb9d173f47b761d5fa7554056af9e
