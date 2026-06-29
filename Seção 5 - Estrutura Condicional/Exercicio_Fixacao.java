@@ -7,7 +7,7 @@ import java.util.Scanner;  // Classe para ler dados digitados pelo usuário
  * Programa para calcular imposto de renda progressivo em Lisarb
  * Autor: Gabriel
  */
-public class Teste_de_Conhecimentos {
+public class Exercicio_Fixacao {
 
     public static void main(String[] args) {
         // Define que os números decimais usarão ponto (ex: 3.5) em vez de vírgula
