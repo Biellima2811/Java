@@ -73,7 +73,23 @@ public class course {
                     bombaCombustivel.abastecerPorValor(valorAbastecimento);
                     break;
                 case 3:
-                    System.out.println("Em Desenvolvimento");
+                    if (bombaCombustivel == null) {
+                        System.err.println("Erro: Nenhuma bomba cadastrada no sistema! Vá na opção 1 primeiro.");
+                        break;
+                    }
+                    System.out.print("Insira à senha de autorização: ");
+                    int senhaAutoriza = sc.nextInt();
+                    if (senhaAutoriza == bombaCombustivel.getSENHA_AUTORZA()){
+                        System.out.println("** Alteração de Valores de Combustivel **");
+                        System.out.println("Combustivel cadastrado: " +  bombaCombustivel.getTipoCombustivel());
+                        System.out.print("Deseja atualiza o valor para quanto?\n" +
+                                "R$: ");
+                        int novoValorCombustivel = sc.nextInt();
+                        sc.nextLine();
+                        bombaCombustivel.setPrecoPorLitro(novoValorCombustivel, senhaAutoriza);
+                        System.out.println("Sucesso! - Novo Valor: " + bombaCombustivel.getPrecoPorLitro() +
+                                "\n Combustivel: " + bombaCombustivel.getTipoCombustivel());
+                    }
                     break;
                 case 4:
                     if (bombaCombustivel != null) {

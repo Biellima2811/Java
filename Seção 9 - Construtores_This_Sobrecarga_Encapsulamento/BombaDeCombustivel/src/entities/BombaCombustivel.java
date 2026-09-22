@@ -4,7 +4,7 @@ public class BombaCombustivel {
     private String tipoCombustivel;
     private int precoPorLitro;
     private double quantidadeNoReservatorio;
-    public static final int SENHA_AUTORZA = 1234;
+    private final int SENHA_AUTORZA = 1234;
 
     public BombaCombustivel(String tipoCombustivel, int precoPorLitro, double quantidadeNoReservatorio) {
         this.tipoCombustivel = tipoCombustivel;
@@ -47,6 +47,10 @@ public class BombaCombustivel {
         System.out.printf("Sucesso! Valor pago: R$%.2f - Quantidade de litros abastecida: %.2f%n", valorPago, quantidadeDeLitro);
     }
 
+    public int getPrecoPorLitro() {
+        return precoPorLitro;
+    }
+
     public void setPrecoPorLitro(int novoPreco, int senhaAutoriza) {
         int chaveMestre = SENHA_AUTORZA;
         if (novoPreco < 0){
@@ -69,6 +73,10 @@ public class BombaCombustivel {
 
     public void setQuantidadeNoReservatorio(double quantidadeNoReservatorio) {
         this.quantidadeNoReservatorio = quantidadeNoReservatorio;
+    }
+
+    public int getSENHA_AUTORZA() {
+        return SENHA_AUTORZA;
     }
 
     @Override
